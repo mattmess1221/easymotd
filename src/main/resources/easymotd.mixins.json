@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "mnm.mods.easymotd.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinServerQueryPacketHandler"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "easymotd-refmap.mixins.json"
+}

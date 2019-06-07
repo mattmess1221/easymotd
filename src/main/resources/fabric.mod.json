@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "easymotd",
+  "version": "${version}",
+  "license": "Apache-2.0",
+  "mixins": [
+    "easymotd.mixins.json"
+  ],
+  "entrypoints": {
+    "main": [
+      "mnm.mods.easymotd.EasyMOTD"
+    ]
+  }
+}
