@@ -17,7 +17,8 @@ The actual file location should be at `world/datapacks/config/data/easymotd/text
 [
   "Come play with us!\nBottom Text",
   "I see you",
-  "If I were a rich man with a million or two, I'd live in a penthouse in a room with a view."
+  "If I were a rich man with a million or two, I'd live in a penthouse in a room with a view.",
+  {"text": "I LOVE BEING PURPLE!", "color": "dark_purple"}
 ]
 ```
 
