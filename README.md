@@ -12,6 +12,8 @@ You can force a line break by using `\n` in the text.
 
 The actual file location should be at `world/datapacks/config/data/easymotd/texts/motd.json`
 
+You will also need a pack.mcmeta file at `world/datapacks/config/pack.mcmeta`. See the data packs link below.
+
 ## Example
 ```json
 [
