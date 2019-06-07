@@ -2,13 +2,26 @@
   "schemaVersion": 1,
   "id": "easymotd",
   "version": "${version}",
-  "license": "Apache-2.0",
-  "mixins": [
-    "easymotd.mixins.json"
+  "name": "EasyMOTD",
+  "description": "Randomized MOTD for your server",
+  "authors": [
+    "killjoy1221"
   ],
+  "contact": {
+    "sources": "https://github.com/killjoy1221/easymotd"
+  },
+  "license": "MIT",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "mnm.mods.easymotd.EasyMOTD"
     ]
+  },
+  "mixins": [
+    "easymotd.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">0.4.0",
+    "fabric": "*"
   }
 }

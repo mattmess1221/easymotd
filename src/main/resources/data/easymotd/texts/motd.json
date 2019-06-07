@@ -1,4 +1,4 @@
 [
   "EasyMOTD has been installed. Please configure it.\nBottom Text",
-  "Top Text\nBottom Text"
+  ["Hello ", {"text":  "User", "color":  "red"}, ". Come play with us!\nBottom Text"]
 ]

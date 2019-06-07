@@ -65,15 +65,15 @@ public class EasyMOTD implements ModInitializer, SynchronousResourceReloadListen
     }
 
     private void loadMotd(ResourceManager manager) {
-        System.out.println("RELOAD");
         messages.clear();
+
         try (Resource res = manager.getResource(MOTD_JSON);
              BufferedReader reader = new BufferedReader(new InputStreamReader(res.getInputStream()))) {
             List<Component> motd = gson.fromJson(reader, TEXT_TYPE.getType());
             this.messages.addAll(motd);
 
             logger.info("Loaded {} motd messages", this.messages::size);
-        } catch (IOException e) {
+        } catch (Exception e) {
             logger.warn("Unable to load motd.json.", e);
         }
         Component text;
