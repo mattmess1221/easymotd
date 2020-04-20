@@ -1,9 +1,11 @@
 plugins {
-    id 'fabric-loom' version '0.2.4-SNAPSHOT'
+    id 'fabric-loom' version '0.2.7-SNAPSHOT'
 }
 
+def mcVersion = '1.15.2'
+
 group 'mnm.mods'
-version '1.0'
+version "1.0.1-${mcVersion}"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -17,8 +19,8 @@ repositories {
 }
 
 dependencies {
-    minecraft 'com.mojang:minecraft:1.15.2'
-    mappings 'net.fabricmc:yarn:1.15.2+build.9'
+    minecraft "com.mojang:minecraft:${mcVersion}"
+    mappings "net.fabricmc:yarn:${mcVersion}+build.9"
     compile 'net.fabricmc:fabric-loader:0.8+'
     modCompile 'net.fabricmc.fabric-api:fabric-api:0.5.1+'
 
